@@ -4,7 +4,7 @@ import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * 饿单例模式：该模式在类加载时就会创建对象
+ * 饿单例模式：该模式在类加载时就会创建对象，由此可见，饿单例模式天生就是线程安全的。
  */
 @Data
 @Slf4j
@@ -18,7 +18,7 @@ public class Person2 {
     // 2.私有化构造方法
     private Person2() {
         log.info("hungry first loaded...");
-        this.name = "SunRun";
+        this.name = "饿单例";
         this.age = 24;
     }
 

@@ -15,7 +15,7 @@ public class Person {
 
     // 2.私有化构造方法
     private Person() {
-        this.name = "joyBlack";
+        this.name = "懒单例";
         this.age = 27;
     }
 
